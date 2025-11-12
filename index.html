@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Matheus Moreira</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #9ca3af;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .social {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .social a {
+      color: #3b82f6;
+      font-size: 1.6rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #60a5fa;
+      transform: scale(1.15);
+    }
+
+    /* SOBRE MIM */
+    .about {
+      max-width: 900px;
+      margin: 40px auto 20px;
+      padding: 40px;
+      background: #1f2937;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    }
+
+    .about h2 {
+      color: #3b82f6;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .about p {
+      color: #d1d5db;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    /* PROJETOS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 60px auto;
+    }
+
+    .card {
+      background: #111827;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #1f2937;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      word-break: break-word;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #3b82f6;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #60a5fa;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 25px;
+      border: 2px solid #3b82f6;
+      color: #3b82f6;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .card a:hover {
+      background: #3b82f6;
+      color: #fff;
+      box-shadow: 0 0 10px #3b82f6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #6b7280;
+      font-size: 0.9rem;
+      border-top: 1px solid #1f2937;
+      width: 100%;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .about p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Matheus Moreira</h1>
+    <p>Desenvolvedor Full Stack — Especialista em integrações de pagamento, banco de dados e landing pages profissionais.</p>
+
+    <div class="social">
+      <a href="https://wa.me/5561981040323" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/matheusmoreirarochaa" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>Sobre mim</h2>
+    <p>
+      Sou criador de sistemas completos, especialista em implementação de métodos de pagamento, 
+      análise e modelagem de banco de dados, automações e desenvolvimento de landing pages profissionais.  
+      Tenho como objetivo unir tecnologia, performance e design para entregar resultados reais.
+    </p>
+  </section>
+
+  <section class="projects">
+    <div class="card">
+      <h3>shpay.tech</h3>
+      <a href="https://shpay.tech" target="_blank">Visitar</a>
+    </div>
+    <div class="card">
+      <h3>shticket.com.br</h3>
+      <a href="https://shticket.com.br" target="_blank">Visitar</a>
+    </div>
+    <div class="card">
+      <h3>draliviastudart.com.br</h3>
+      <a href="https://draliviastudart.com.br" target="_blank">Visitar</a>
+    </div>
+    <div class="card">
+      <h3>jdandrecastro.com.br</h3>
+      <a href="https://jdandrecastro.com.br" target="_blank">Visitar</a>
+    </div>
+    <div class="card">
+      <h3>caminhadacommaria.org.br</h3>
+      <a href="https://caminhadacommaria.org.br" target="_blank">Visitar</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Matheus Moreira — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
